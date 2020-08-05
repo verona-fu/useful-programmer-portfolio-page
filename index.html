@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+crossorigin="anonymous">
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+ body {
+   background-color: #FCF0CC;
+   font-family: 'Lato', sans-serif;
+   margin: 0;
+ }
+
+ nav {
+   background-color: #861657;
+   color: #fff;
+   display: flex;
+   justify-content: flex-end;
+   padding: 15px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 100;
+ }
+
+ nav a {
+   color: #fff;
+   position: relative;
+   margin-left: 30px;
+   text-decoration: none;
+ }
+
+ nav a::after {
+   content: '';
+   border-bottom: 3px solid #fff;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: translateY(10px);
+   transition: transform 0.3s ease;
+   opacity: 0;
+   height: 100%;
+   width: 100%;
+ }
+
+ nav a:hover::after {
+   opacity: 1;
+   transform: translateY(0px);
+ }
+
+ header {
+   background-image: url('https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2200&q=80');
+   background-size: cover;
+   background-position: center center;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   height: 100vh;
+   position: relative;
+ }
+
+ header::after {
+   content: '';
+   background-color: #000;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0.8;
+ }
+
+ header * {
+    position: relative;
+    z-index: 1;
+ }
+
+ header h1 {
+   font-size: 60px;
+   margin-bottom: 5px;
+   margin-top: 0;
+ }
+
+ header p {
+   font-size: 30px;
+   margin: 0;
+ }
+
+ section {
+   padding: 40px;
+   text-align: center;
+ }
+
+ section h2{
+   margin: 0;
+ }
+
+ section p {
+   margin-top: 0;
+ }
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 810px;
+  margin: 20px auto 0;
+}
+ .project-tile {
+   margin: 10px;
+   max-width: 250px;
+   text-decoration: none;
+   transition: transform 0.3s ease;
+ }
+
+  .project-tile:hover {
+    transform: scale(1.05);
+  }
+
+
+ .project-tile img {
+   max-width: 100%;
+ }
+
+ .project-tile p {
+   color: #000;
+   font-size: 20px;
+   margin-top: 10px;
+ }
+
+ .bg-pinkish {
+   background-color: #A64253;
+   color: #fff;
+ }
+
+ .social-ul {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+
+ .social-ul a {
+   border-radius: 50%;
+   border: 1px solid #fff;
+   color: #fff;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   margin: 5px 10px;
+   height: 50px;
+   width: 50px;
+   text-decoration: none;
+ }
+
+ footer {
+   background-color: #861657;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+ }
+
+ footer .fa-heart {
+   color: red;
+ }
+
+ @media (max-width: 440px) {
+   section {
+     padding: 20px;
+   }
+ }
+
+
+</style>
+
+    <nav id="navbar">
+      <a href="#welcome-section">Welcome Section</a>
+      <a href="#projects">Projects</a>
+      <a href="#social">Social</a>
+    </nav>
+
+  <header id="welcome-section">
+      <h1>Hello!👋</h1>
+      <p>My name is verona-fu</p>
+      <p>and I am a student studing Web Design</p>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+
+    <a href="https://github.com/verona-fu" target="_blank" class="project-tile">
+      <img src="https://pm1.narvii.com/6784/6912ea4d5fddee4e1b5d913789bfa396c7db33d0v2_hq.jpg"
+      alt="jackson yee">
+      <p>Jackson Yee</p>
+    </a>
+
+    <a href="https://github.com/verona-fu" target="_blank" class="project-tile">
+      <img src="https://image.freepik.com/free-vector/feedback-survey-form-clipboard_98734-23.jpg"
+      alt="survey form" />
+      <p>Survey Form</p>
+    </a>
+
+    <a href="https://github.com/verona-fu" target="_blank" class="project-tile">
+      <img src="https://sendpulse.com/wp-content/uploads/2019/07/Product-Landing-Page-Best-Practices.png"
+      alt="product landing page" />
+      <p>Product Landing Page</p>
+    </a>
+
+    <a href="https://github.com/verona-fu" target="_blank" class="project-tile">
+      <img src="https://i.ytimg.com/vi/kmHdn_AcTdI/hqdefault.jpg"
+      alt="technical documentation page" />
+      <p>Technical Documentation Page</p>
+    </a>
+
+    <a href="https://github.com/verona-fu" target="_blank" class="project-tile">
+      <img src="https://www.florin-pop.com/images/100Days100PRojects/Day%20031.jpg"
+      alt="new year countdown" />
+      <p>New Year Countdown</p>
+    </a>
+
+    <a href="https://github.com/verona-fu" target="_blank" class="project-tile">
+      <img src="https://www.florin-pop.com/images/100Days100PRojects/Day%20038.jpg"
+      alt="3D background boxes" />
+      <p>3D Background Boxes</p>
+    </a>
+   </div>
+  </section>
+
+  <section id="social" class="bg-pinkish">
+    <h2>Social Media</h2>
+    <p>You can find me on</p>
+    <ul class="social-ul">
+      <li><a id="profile-link" href="https://github.com/verona-fu" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://twitter.com/Verona51279591" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://youtube.com/Louli Fu" target="_blank"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="https://linkedin.com/in/Louli Fu" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://instagram.com/nicoli_verona" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="http://facebook.com/Louli Fu" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    </ul>
+  </section>
+
+  <footer>
+    Made with <i class="fas fa-heart"></i> by verona-fu
+  </footer>
+
+  <body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
